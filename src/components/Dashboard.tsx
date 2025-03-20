@@ -30,6 +30,7 @@ export function Dashboard({
   return (
     <div className="p-4 h-screen grid gap-2 grid-cols-1">
       <div className="rounded-md flex flex-col justify-center items-center text-white font-mono  col-span-4 row-span-5 p-4 gap-4">
+        <h2 className="text-2xl text-gray-800 dark:text-gray-300">Budget Dashboard</h2>
         <div className="rounded-md  flex flex-col w-full p-4 gap-4 h-1/3">
           <div className=" text-gray-700 p-4 rounded-md h-1/2 flex items-center justify-center">
             <MonthSelector

@@ -55,7 +55,10 @@ export function CustomTable({ transactions }: { transactions: Transaction[] }) {
         <Pagination>
           <PaginationContent>
             {Array.from({ length: totalPages }).map((_, index) => (
-              <PaginationItem key={`page-${index}`}>
+              <PaginationItem 
+                key={`page-${index}`}
+                className={currentPage === index + 1 ? '' : 'cursor-pointer' }
+              >
                 <PaginationLink
                  isActive={currentPage === index + 1}
                  onClick={() => setCurrentPage(index + 1)}>
